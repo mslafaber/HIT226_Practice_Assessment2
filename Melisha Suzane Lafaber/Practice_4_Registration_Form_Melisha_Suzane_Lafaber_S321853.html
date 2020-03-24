@@ -14,11 +14,12 @@
           <h1>Online Registration Form</h1>
         </header>
         <!--Below is the section with the users name details-->
-        <section class="articlebox1">
+        <section class="sectionbox1">
           <p>Name <span>*</span> <br>
 
           <div class="sibling1">
-            <select id="selecttitles" name="titles"> <!--A dropdown section for the title of the user-->
+            <select id="selecttitle" name="titles" size=1 required> <!--A dropdown section for the title of the user-->
+              <option value="" disabled selected hidden>Please Choose...</option>
               <option value="Mr">Mr</option>
               <option value="Ms">Ms</option>
               <option value="Mrs">Mrs</option>
@@ -29,12 +30,12 @@
           </div>
 
           <div class="sibling2">
-            <input type="text" id="fname" name="fname"><br> <!--Inputs the first name of the user-->
+            <input type="text" id="fname" name="fname" required><br> <!--Inputs the first name of the user-->
             <label id="firname">First Name</label>
           </div>
 
           <div class="sibling2">
-            <input type="text" id="lname" name="lname"><br> <!--Inputs the last name of the user-->
+            <input type="text" id="lname" name="lname" required><br> <!--Inputs the last name of the user-->
             <label id="lasname">Last Name</label>
           </div>
 
@@ -45,7 +46,7 @@
             <p>Date of Birth <span>*</span> </p>
 
             <div class="sibling2">
-                <input type="date" id="dob" name="dob"><br> <!--Enter the user's date of birth-->
+                <input type="date" id="dob" name="dob" required><br> <!--Enter the user's date of birth-->
             </div>
 
             <br><br>
@@ -55,14 +56,15 @@
           <section>
             <p>Address <span>*</span></p>
               <label id="street1">Street Address line 1 </label>
-              <input type="text" class="uniqueinput" name="address1">
+              <input type="text" class="uniqueinput" name="address1" required>
               <br>
 
               <label id="street2">Street Address line 2 </label>
               <input type="text" class="uniqueinput" name="address2">
               <p>
               <div class="sibling1">
-                <select id="states" name="states"> <!--A dropdown section for the state of the user-->
+                <select id="states" name="states" size=1 required> <!--A dropdown section for the state of the user-->
+                  <option value="" disabled selected hidden>Please Choose..</option>
                   <option value="NSW">NSW</option>
                   <option value="VIC">VIC</option>
                   <option value="Tas">Tasmania</option>
@@ -76,12 +78,12 @@
               </div>
 
               <div class="sibling2">
-                <input type="text" id="entercity" name="city"><br> <!--Inputs the city name of the user-->
+                <input type="text" id="entercity" name="city" required><br> <!--Inputs the city name of the user-->
                 <label id="lblcity">City</label>
               </div>
 
               <div class="sibling2">
-                <input type="text" id="post" name="post"><br> <!--Inputs the postal code of the user-->
+                <input type="text" id="post" name="post" required><br> <!--Inputs the postal code of the user-->
                 <label id="postcode">Post Code</label>
               </div>
               <br><br><br>
@@ -104,21 +106,21 @@
           <!--Below is the section with the users email-->
           <section>
             <p>E-mail <span>*</span> <br>
-              <input type="email" class="uniqueinput" name="email">
+              <input type="email" class="uniqueinput" name="email" required>
             </p>
           </section>
 
           <!--Below is the section with the users password-->
           <section>
             <p>Password <span>*</span> <br>
-              <input type="password" class="uniqueinput" name="password">
+              <input type="password" class="uniqueinput" name="password" required>
             </p>
           </section>
 
           <!--Below is the section for retyping the password-->
           <section>
             <p>Re-enter Password <span>*</span> <br>
-              <input type="password" class="uniqueinput" name="repassword">
+              <input type="password" class="uniqueinput" name="repassword" required>
             </p>
           </section>
 
