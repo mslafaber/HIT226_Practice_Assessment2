@@ -1,0 +1,78 @@
+body *{
+  font-family: 'Georgia', Times, serif;
+  font-size: 1em;
+  color: #CC7178;
+  margin: 0.5%;
+  width: 90%;
+}
+
+body{
+  background-color: #CC7178;
+}
+
+h1{
+  height: 1.5em;
+  background-color: #89023E;
+  font-weight: bold;
+  font-size: 2em;
+  color: #FFD9DA;
+  padding: 0.25em;
+  text-align: right;
+}
+
+form{
+  background-color: #FFD9DA;
+  padding: 0.5em;
+}
+
+label.field{
+  margin-left: 1.5em;
+  font-size: 1.25em;
+  font-weight: bold;
+  padding: 0.5em;
+}
+
+input.field{
+  margin-left: 2.5em;
+  font-style: italic;
+  width: 70%;
+  height:2em;
+  padding: 0.5em;
+}
+
+select.field{
+  margin-left: 2.5em;
+  width: 45%;
+  padding: 0.5em;
+  font-style: normal;
+  font-weight: bold;
+}
+
+img.main{
+  position: absolute;;
+  margin-left: 70%;
+  margin-top: 10em;
+  width: 25em;
+  height: auto;
+}
+
+input.submit{
+  font-size: 1.25em;
+  font-weight: bold;
+  height: 2em;
+  width: 50%;
+  margin-left: 2em;
+}
+
+@media screen and (max-width: 800px) {
+
+  h1{
+    font-size: 1.75em;
+  }
+  img.main{
+    display: none;
+  }
+  body *{
+    width: 100%
+  }
+}

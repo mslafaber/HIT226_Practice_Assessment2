@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en" >
+  <head>
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="width" content="width=device-width initial-scale=1.0">
+  </head>
+  <body>
+    <article class="">
+      <h1 class="main">Registration Form</h1>
+
+      <figure>
+        <img class="main" src="registration.jpg" alt="Registraion Picture">
+      </figure>
+
+      <form class="" action="index.html" method="post">
+        <div class="field">
+          <label for="fname" class="field">First Name</label><br>
+          <input class="field" id="fname" type="text" name="fname" value="" placeholder="First Name" required maxlength="15"><br>
+        </div>
+
+        <div class="field">
+          <label for="lname" class="field">Last Name</label><br>
+          <input class="field" id="lname" type="text" name="lname" value="" placeholder="Last Name" required maxlength="20"><br>
+        </div>
+
+        <div class="field">
+          <label for="address" class="field">Address</label><br>
+          <input class="field" id="address" type="text" name="Address" value="" placeholder="Enter here" required maxlength="25"><br>
+        </div>
+
+        <div class="field">
+          <label for="suburb" class="field">Suburb</label><br>
+          <input class="field" id="suburb" type="text" name="suburb" value="" placeholder="Darwin" required maxlength="15"><br>
+        </div>
+
+        <div class="field">
+          <label for="postalcode" class="field">Postal Code</label><br>
+          <input class="field" id="postalcode" type="number" name="postalcode" placeholder="0800" value="" required max="9999"><br>
+        </div>
+
+        <div class="field">
+          <label for="state" class="field">State or Territory</label><br>
+          <select class="field" id="state" class="state" name="state" required size="1">
+            <option value="NT">Northern Territory</option>
+            <option value="WA">Western Australia</option>
+            <option value="SA">South Asutralia</option>
+            <option value="QLD">Queensland</option>
+            <option value="NSW">New South Whales</option>
+            <option value="VIC">Victoria</option>
+            <option value="TAS">Tasmania</option>
+            <option value="ACT">Australian Capital Territory</option>
+          </select><br>
+        </div>
+
+        <div class="field">
+          <label for="email" class="field">E-Mail</label><br>
+          <input class="field" id="email" type="email" name="email" value="" placeholder="abc@def.com" required><br>
+        </div>
+
+        <div class="field">
+          <label for="telephone" class="field">Phone number</label><br>
+          <input class="field" id="telephone" type="tel" name="telephone" value="" placeholder="04XXXXXXXX" required><br>
+        </div>
+
+        <div class="field">
+          <label for="dateofbirth" class="field">Date of Birth</label><br>
+          <input class="field" id="dateofbirth" type="date" name="dateofbirth" value="" required><br>
+        </div>
+
+        <div class="field">
+          <label for="password" class="field">Password</label><br>
+          <input class="field" id="password" type="password" name="password" value="" placeholder="Password" required><br>
+        </div>
+
+        <div class="submit">
+          <input class="submit" id="submit" type="submit" name="submit" value=" Submit " autofocus class="submit">
+        </div>
+      </form>
+    </article>
+  </body>
+</html>
